@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #001f3f; /* Azul escuro */
+    --primary-color: #003366; /* Azul médio */
+    --secondary-color: #ffffff; /* Branco */
+    --accent-color: #1E90FF; /* Azul vibrante */
+    --highlight-color: #00CED1; /* Azul claro */
+    --font: "Nunito", sans-serif; /* Tipografia arredondada e moderna */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 1.5rem;
+    font-size: 1.3rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--highlight-color);
+    transform: scale(1.1);
+}
+
+.grafico {
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+#graficos-container {
+    margin: 4rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid var(--highlight-color);
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 3rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
